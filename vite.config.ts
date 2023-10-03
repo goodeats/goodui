@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, 'lib/main.ts'),
+      entry: resolve(__dirname, 'src/lib/main.ts'),
       formats: ['es'],
     },
     rollupOptions: {
@@ -23,6 +23,11 @@ export default defineConfig({
         assetFileNames: 'assets/[name][extname]',
         entryFileNames: '[name].js',
       },
+    },
+  },
+  resolve: {
+    alias: {
+      '@lib': resolve(__dirname, './src/lib'),
     },
   },
 });
