@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Button } from './lib/main';
+import { Button, Zutton } from './lib/main';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +19,10 @@ function App() {
       <div className="card">
         <p>Library Button</p>
         <Button />
+      </div>
+      <div className="card">
+        <p>Nested Library Button</p>
+        <Zutton />
       </div>
     </>
   );
