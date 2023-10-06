@@ -1,3 +1,5 @@
 export const Zutton = () => {
-  return <button className="gui-bg-blue-500 gui-italic">Click me</button>;
+  return (
+    <button className="bg-blue-500 py-2 px-3 gui-italic">Click zee</button>
+  );
 };

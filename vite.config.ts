@@ -12,13 +12,13 @@ export default defineConfig({
     react(),
     libInjectCss(),
     dts({
-      include: ['lib'],
+      include: ['src/lib'],
     }),
   ],
   build: {
     copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, 'src/lib/main.ts'),
+      entry: resolve(__dirname, 'src/lib/index.ts'),
       formats: ['es'],
     },
     rollupOptions: {

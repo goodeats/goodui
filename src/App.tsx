@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Button, Zutton } from './lib/main';
+import { Button, Zutton } from './lib';
 
 function App() {
   const [count, setCount] = useState(0);

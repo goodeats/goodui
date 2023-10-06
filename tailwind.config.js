@@ -73,6 +73,6 @@ export default {
       },
     },
   },
-  prefix: 'gui-',
+  // prefix: 'gui-',
   plugins: [tailwindcssAnimate],
 };
