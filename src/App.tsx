@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Button, Zutton } from './lib';
+import { Button } from './lib';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,18 +20,13 @@ function App() {
       </p>
       <div className="card">
         <p>Default Button</p>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button
+          variant="destructive"
+          size="lg"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
-        </button>
-      </div>
-      <hr />
-      <div className="card">
-        <p>Library Button</p>
-        <Button />
-      </div>
-      <div className="card">
-        <p>Nested Library Button</p>
-        <Zutton />
+        </Button>
       </div>
     </>
   );

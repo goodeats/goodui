@@ -1,12 +1,11 @@
-import tailwindcssAnimate from 'tailwindcss-animate';
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ['class'],
   content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    './src/lib/**/*.{ts,tsx}',
-    './node_modules/@pppaaattt/goodui/**/*.{ts,tsx,js,jsx}',
   ],
   theme: {
     container: {
@@ -73,5 +72,5 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [require('tailwindcss-animate')],
 };

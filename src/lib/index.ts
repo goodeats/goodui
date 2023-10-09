@@ -2,5 +2,4 @@
 // leave uncommented if you want the project importing this module to have its tailwindcss overridden by this module's tailwindcss config
 // import '../index.css';
 
-export { Button } from './Button';
 export * from './components';

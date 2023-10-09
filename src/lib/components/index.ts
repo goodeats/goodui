@@ -1,1 +1,1 @@
-export { Zutton } from './Zutton';
+export * from './ui';
