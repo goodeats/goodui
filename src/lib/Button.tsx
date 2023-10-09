@@ -1,6 +1,6 @@
 export const Button = () => {
   return (
-    <button className="bg-primary text-primary-foreground p-1 px-2 gui-italic">
+    <button className="gui-italic bg-primary p-1 px-2 text-primary-foreground">
       Click me
     </button>
   );

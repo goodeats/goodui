@@ -29,13 +29,13 @@ export default defineConfig({
           // file, so e.g. src/nested/foo.js becomes nested/foo
           relative(
             'src/lib',
-            file.slice(0, file.length - extname(file).length)
+            file.slice(0, file.length - extname(file).length),
           ),
 
           // This expands the relative paths to absolute paths, so e.g.
           // src/nested/foo becomes /project/src/nested/foo.js
           fileURLToPath(new URL(file, import.meta.url)),
-        ])
+        ]),
       ),
       output: {
         assetFileNames: 'assets/[name][extname]',

@@ -1,6 +1,6 @@
 export const Zutton = () => {
   return (
-    <button className="bg-secondary text-secondary-foreground py-2 px-3 gui-italic">
+    <button className="gui-italic bg-secondary px-3 py-2 text-secondary-foreground">
       Click zee
     </button>
   );
