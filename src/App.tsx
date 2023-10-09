@@ -9,6 +9,15 @@ function App() {
     <>
       <h1>GoodUI</h1>
       <p className="read-the-docs">Design system</p>
+      <p>
+        <a
+          href="https://github.com/goodeats/goodui"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+      </p>
       <div className="card">
         <p>Default Button</p>
         <button onClick={() => setCount((count) => count + 1)}>
