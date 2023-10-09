@@ -13,7 +13,8 @@
     "build": "bunx --bun tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "bunx --bun prettier --write ."
+    "format": "bunx --bun prettier --write .",
+    "typecheck": "bunx --bun tsc"
   },
   "peerDependencies": {
     "react": "^18.2.0",
