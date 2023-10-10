@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
+import { ButtonStoryTests } from './Button.test';
 
 const meta: Meta<ButtonProps> = {
   title: 'UI/Button',
@@ -44,6 +45,7 @@ export const Primary: Story = {
     variant: 'default',
     children: 'Button',
   },
+  play: ButtonStoryTests,
 };
 
 export const Secondary: Story = {
@@ -51,6 +53,7 @@ export const Secondary: Story = {
     variant: 'secondary',
     children: 'Button',
   },
+  play: (args) => ButtonStoryTests({ ...args, variant: 'secondary' }),
 };
 
 export const Large: Story = {
@@ -58,6 +61,7 @@ export const Large: Story = {
     size: 'lg',
     children: 'Button',
   },
+  play: (args) => ButtonStoryTests({ ...args, size: 'lg' }),
 };
 
 export const Small: Story = {
@@ -65,6 +69,7 @@ export const Small: Story = {
     size: 'sm',
     children: 'Button',
   },
+  play: (args) => ButtonStoryTests({ ...args, size: 'sm' }),
 };
 
 export const Warning: Story = {
@@ -72,6 +77,12 @@ export const Warning: Story = {
     variant: 'destructive',
     children: 'Delete now',
   },
+  play: (args) =>
+    ButtonStoryTests({
+      ...args,
+      variant: 'destructive',
+      children: 'Delete now',
+    }),
 };
 
 export const Outline: Story = {
@@ -79,6 +90,8 @@ export const Outline: Story = {
     variant: 'outline',
     children: 'Outline',
   },
+  play: (args) =>
+    ButtonStoryTests({ ...args, variant: 'outline', children: 'Outline' }),
 };
 
 export const Ghost: Story = {
@@ -86,6 +99,8 @@ export const Ghost: Story = {
     variant: 'ghost',
     children: 'Ghost',
   },
+  play: (args) =>
+    ButtonStoryTests({ ...args, variant: 'ghost', children: 'Ghost' }),
 };
 
 export const Link: Story = {
@@ -93,6 +108,8 @@ export const Link: Story = {
     variant: 'link',
     children: 'Link',
   },
+  play: (args) =>
+    ButtonStoryTests({ ...args, variant: 'link', children: 'Link' }),
 };
 
 export const Disabled: Story = {
@@ -100,4 +117,6 @@ export const Disabled: Story = {
     disabled: true,
     children: 'Disabled',
   },
+  play: (args) =>
+    ButtonStoryTests({ ...args, disabled: true, children: 'Disabled' }),
 };
