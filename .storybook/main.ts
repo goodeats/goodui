@@ -7,6 +7,8 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    // https://storybook.js.org/docs/react/writing-tests/accessibility-testing
+    '@storybook/addon-a11y',
   ],
   framework: {
     name: '@storybook/react-vite',
