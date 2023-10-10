@@ -48,7 +48,7 @@ Here are some frameworks and libraries that `goodui` uses:
 - [ESLint](https://eslint.org/) - A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom user interfaces.
 - [Radix UI](https://www.radix-ui.com) - A low-level UI component library with a focus on accessibility, customization and developer experience.
-- [shadcn/ui](https://ui.shadcn.com) - A UI component library built with React and TypeScript.
+- [shadcn/ui](https://ui.shadcn.com) - Beautifully designed components built with Radix UI and Tailwind CSS.
 - [clsx](https://www.npmjs.com/package/clsx) - A tiny utility for constructing `className` strings conditionally.
 - [Storybook JS](https://storybook.js.org/) - An open source tool for developing UI components in isolation.
 - [Cursor](https://www.cursor.so/) - An AI-powered IDE that extends the functionality of VS Code. (Personal Note: I am practicing a lot with this IDE while building this project)
