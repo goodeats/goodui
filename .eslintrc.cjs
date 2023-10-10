@@ -12,7 +12,7 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'tailwindcss'],
+  plugins: ['react-refresh', 'tailwindcss', 'unused-imports'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
