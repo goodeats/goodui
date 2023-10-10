@@ -3,6 +3,9 @@ import { expect } from '@storybook/jest';
 import { ButtonProps } from './Button';
 import { buttonVariants } from './variants';
 
+// https://storybook.js.org/docs/react/writing-tests/test-runner
+// https://storybook.js.org/docs/react/writing-tests/interaction-testing
+
 interface ButtonStoryTestsArgs {
   canvasElement: HTMLElement;
   variant?: ButtonProps['variant'];
