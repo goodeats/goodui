@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import { Button } from './lib';
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
       <div className="card">
         <p>Default Button</p>
         <Button
-          variant="destructive"
+          variant="default"
           size="lg"
           onClick={() => setCount((count) => count + 1)}
         >
