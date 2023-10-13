@@ -5,7 +5,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
-    'plugin:react/recommended',
+    // shadcn prebuilt files are not compatible with plugin:react/recommended
+    // https://github.com/shadcn-ui/ui/issues/120#issuecomment-1601623204
+    // restore this if they ever resolve it
+    // 'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
