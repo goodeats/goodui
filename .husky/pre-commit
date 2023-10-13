@@ -3,5 +3,4 @@
 
 npm run format
 npm run lint
-# TODO: add tests
-# npm test
+npm run storybook:test

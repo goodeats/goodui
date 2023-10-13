@@ -18,8 +18,9 @@
     "typecheck": "bunx --bun tsc",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test-storybook": "test-storybook --verbose"
+    "storybook:build": "storybook build",
+    "storybook:test": "test-storybook --verbose",
+    "storybook:test:watch": "test-storybook --verbose --watch"
   },
   "peerDependencies": {
     "react": "^18.2.0",
