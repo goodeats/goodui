@@ -1,14 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Label, LabelProps } from './Label';
+import { Label } from './Label';
 
-const meta: Meta<LabelProps & { 'data-testid': string }> = {
+interface ArgsType {
+  'data-testid': string;
+  children?: React.ReactNode;
+}
+
+const meta: Meta<ArgsType> = {
   title: 'UI/Label',
   component: Label,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
-} as Meta<LabelProps & { 'data-testid': string }>;
+} as Meta<ArgsType>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
