@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+
 export type ListOfErrors = (string | null | undefined)[] | null | undefined;
 
 export function ErrorList({
@@ -12,10 +14,26 @@ export function ErrorList({
   return (
     <ul id={id} className="flex flex-col gap-1">
       {errorsToRender.map((e) => (
-        <li key={e} className="text-foreground-danger text-[10px]">
+        <li key={e} className="text-sm font-medium text-destructive">
           {e}
         </li>
       ))}
     </ul>
+  );
+}
+
+export function Errors({
+  errorId,
+  errors,
+  className,
+}: {
+  errorId?: string;
+  errors?: ListOfErrors;
+  className?: string;
+}) {
+  return (
+    <div className={cn('min-h-[32px] px-4 pb-3 pt-1', className)}>
+      {errorId ? <ErrorList id={errorId} errors={errors} /> : null}
+    </div>
   );
 }

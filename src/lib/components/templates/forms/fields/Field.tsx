@@ -1,6 +1,6 @@
 import { Input, Label } from '@/lib/components';
 import React, { useId } from 'react';
-import { ErrorList, ListOfErrors } from './Errors';
+import { Errors, ListOfErrors } from './Errors';
 
 export function Field({
   labelProps,
@@ -25,9 +25,7 @@ export function Field({
         aria-describedby={errorId}
         {...inputProps}
       />
-      <div className="min-h-[32px] px-4 pb-3 pt-1">
-        {errorId ? <ErrorList id={errorId} errors={errors} /> : null}
-      </div>
+      <Errors errorId={errorId} errors={errors} />
     </div>
   );
 }
