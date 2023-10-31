@@ -1,6 +1,6 @@
 import { userEvent, within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-import { InputProps } from './Input';
+import { InputProps } from './Input.tsx';
 
 // https://storybook.js.org/docs/react/writing-tests/test-runner
 // https://storybook.js.org/docs/react/writing-tests/interaction-testing

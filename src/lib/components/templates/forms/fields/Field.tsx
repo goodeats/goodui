@@ -1,6 +1,6 @@
-import { Input, Label } from '@/lib/components';
+import { Input, Label } from '@/lib/components/index.ts';
 import React, { useId } from 'react';
-import { Errors, ListOfErrors } from './Errors';
+import { Errors, ListOfErrors } from './Errors.tsx';
 
 export function Field({
   labelProps,

@@ -1,7 +1,7 @@
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-import { ButtonProps } from './Button';
-import { buttonVariants } from './variants';
+import { ButtonProps } from './Button.tsx';
+import { buttonVariants } from './variants.ts';
 
 // https://storybook.js.org/docs/react/writing-tests/test-runner
 // https://storybook.js.org/docs/react/writing-tests/interaction-testing

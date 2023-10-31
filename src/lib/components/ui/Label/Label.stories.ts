@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Label } from './Label';
+import { Label } from './Label.tsx';
 
 interface ArgsType {
   'data-testid': string;

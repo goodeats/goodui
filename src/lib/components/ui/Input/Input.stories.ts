@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Input, InputProps } from './Input';
-import { InputStoryTests } from './Input.test';
+import { Input, InputProps } from './Input.tsx';
+import { InputStoryTests } from './Input.test.ts';
 
 // TODO: stories and tests I should add:
 // - [ ] states

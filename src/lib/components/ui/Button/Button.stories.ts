@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
-import { ButtonStoryTests } from './Button.test';
+import { Button, ButtonProps } from './Button.tsx';
+import { ButtonStoryTests } from './Button.test.ts';
 
 const meta: Meta<ButtonProps> = {
   title: 'UI/Button',
