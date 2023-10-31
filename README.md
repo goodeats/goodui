@@ -6,13 +6,11 @@ A design system for personal projects, providing a minimal setup to get React wo
 
 To install GoodUI, you can use the following command:
 
-> not yet published
-
 ```
 bun i -D @pppaaattt/goodui
 ```
 
-Local installation:
+### Local dev installation:
 
 Within this component library module:
 
@@ -25,6 +23,8 @@ Within the importing project:
 ```
 bun link @pppaaattt/goodui
 ```
+
+**Note:** You may need to link react from the project repo back to this one.
 
 ## Usage
 
@@ -51,6 +51,7 @@ Here are some frameworks and libraries that `goodui` uses:
 - [shadcn/ui](https://ui.shadcn.com) - Beautifully designed components built with Radix UI and Tailwind CSS.
 - [clsx](https://www.npmjs.com/package/clsx) - A tiny utility for constructing `className` strings conditionally.
 - [Storybook JS](https://storybook.js.org/) - An open source tool for developing UI components in isolation.
+- [Husky](https://typicode.github.io/husky/) - pre-commit hooks to lint code, run tests, etc to keep code clean
 - [Cursor](https://www.cursor.so/) - An AI-powered IDE that extends the functionality of VS Code. (Personal Note: I am practicing a lot with this IDE while building this project)
 
 <!-- I will be updating this as time goes on -->

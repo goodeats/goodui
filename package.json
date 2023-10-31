@@ -1,6 +1,6 @@
 {
   "name": "@pppaaattt/goodui",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodeats/goodui"
+  },
   "scripts": {
     "dev": "bunx --bun vite --port 5555",
     "build": "bunx --bun tsc --p ./tsconfig-build.json && vite build",
@@ -17,6 +21,8 @@
     "format": "bunx --bun prettier --write .",
     "typecheck": "bunx --bun tsc",
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "publish": "npm version patch && npm publish --access public",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
     "storybook:test": "test-storybook --verbose",
