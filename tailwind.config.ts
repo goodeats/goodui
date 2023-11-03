@@ -5,7 +5,10 @@ import radixPlugin from 'tailwindcss-radix';
 import { extendedTheme } from './src/lib/extended-theme';
 
 export default {
-  content: ['./app/**/*.{ts,tsx,jsx,js}'],
+  content: [
+    './app/**/*.{ts,tsx,jsx,js}',
+    'node_modules/@pppaaattt/goodui/**/*.{ts,tsx,jsx,js}',
+  ],
   darkMode: 'class',
   theme: {
     container: {
