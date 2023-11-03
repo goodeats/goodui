@@ -72,7 +72,7 @@ export function CheckboxField({
         <label
           htmlFor={id}
           {...labelProps}
-          className="text-body-xs self-center text-muted-foreground"
+          className="self-center text-body-xs text-muted-foreground"
         />
       </div>
       <div className="px-4 pb-3 pt-1">
